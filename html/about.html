@@ -5,34 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia de Hoteles</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <header class="container border p-5  rounded-3 text-bg-dark">
     <h1 class="mt-5">Descubre los mejores hoteles para tus vacaciones</h1>
     <!-- BARRA DE NAVEGACION -->
     <nav class="navbar navbar-expand-md text-bg-warning fixed-top">
         <div class="container-fluid align-items-baseline">
-          <a class="navbar-brand" href="index.html">Guia de Hoteles</a>
+          <a class="navbar-brand" href="../index.html">Guia de Hoteles</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="html/about.html">Nosotros</a>
+                <a class="nav-link active"  aria-current="page" href="about.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="html/precios.html">Precios</a>
+                <a class="nav-link" href="precios.html">Precios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="html/terminos.html">Terminos y Condiciones</a>
+                <a class="nav-link" href="terminos.html">Terminos y Condiciones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="html/contact.html">Contacto</a>
+                <a class="nav-link" href="contact.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -40,10 +40,11 @@
     </nav>
     <!-- BREADCRUMBS -->
     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Inicio</li>
-        </ol>
-      </nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+      </ol>
+    </nav>
 </header>
 <!-- SECCION PRINCIPAL -->
 <section class="container text-bg-secondary rounded-3 seccion-principal">
@@ -139,6 +140,6 @@
 </footer>
     
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

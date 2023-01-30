@@ -1,8 +1,29 @@
+
+/*****************BARRA DE NAVEGACION********************/
+.navbar-collapse{
+    flex-grow: 0;
+}
+.nav-link:hover{
+    background-color: #0000ff;
+    color: white;
+}
+
+
+/*************************PRINCIPAL*****************************/
+
+.seccion-principal{
+    background-color: darkgray !important;
+    color: darkslategray !important;
+}
+
+
 .propuestas section,.reserva div{
     min-width: 200px;
-    max-width: 370px;
-    margin: 1rem 0;
+    max-width: 330px;
+    margin: 1rem 1.5rem;
 }
+
+/*******************FOOTER****************/
 address{
     margin: 0 auto;
     text-align: center;
