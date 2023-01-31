@@ -24,6 +24,9 @@
 }
 
 /*******************FOOTER****************/
+footer a{
+    text-decoration: none;
+}
 address{
     margin: 0 auto;
     text-align: center;
