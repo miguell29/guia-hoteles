@@ -23,6 +23,11 @@
     margin: 1rem 1.5rem;
 }
 
+/**********************.CART ************************/
+.cart{
+    min-width: 200px !important;
+}
+
 /*******************FOOTER****************/
 footer a{
     text-decoration: none;
