@@ -52,74 +52,119 @@
 </header>
 <!-- SECCION PRINCIPAL -->
 <main class="container p-5 mt-5 mb-5">
-  <section class="table-responsive">
-    <table class="table table-striped table-warning table-bordered">
-      <thead class="thead-dark">
-        <tr class="table-dark">
-          <th>Calidad</th>
-          <th>Pinamar</th>
-          <th>Mar del Plata</th>
-          <th>San Clemente</th>
-          <th>Santa Teresita</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><i class="bi bi-star-fill"></i></td>
-          <td>$1500</td>
-          <td>$1750</td>
-          <td>$1350</td>
-          <td>$1700</td>
-        </tr>
-        <tr>
-          <td>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-          </td>
-          <td>$1500</td>
-          <td>$1750</td>
-          <td>$1350</td>
-          <td>$1700</td>
-        </tr>
-        <tr>
-          <td>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-          </td>
-          <td>$1500</td>
-          <td>$1750</td>
-          <td>$1350</td>
-          <td>$1700</td>
-        </tr>
-        <tr>
-          <td>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-          </td>
-          <td>$1500</td>
-          <td>$1750</td>
-          <td>$1350</td>
-          <td>$1700</td>
-        </tr>
-        <tr>
-          <td>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i></td>
-          <td>$1500</td>
-          <td>$1750</td>
-          <td>$1350</td>
-          <td>$1700</td>
-        </tr>
-    
-      </tbody>
-    </table>
-  </section>
+  <ul class="nav nav-tabs id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Compara</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Tarjetas</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Comentarios</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <!-- PESTAÑA CON LA TABLA DE PRECIOS -->
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <section class="table-responsive">
+        <table class="table table-striped table-warning table-bordered">
+          <thead class="thead-dark">
+            <tr class="table-dark">
+              <th>Calidad</th>
+              <th>Pinamar</th>
+              <th>Mar del Plata</th>
+              <th>San Clemente</th>
+              <th>Santa Teresita</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="bi bi-star-fill"></i></td>
+              <td>$1500</td>
+              <td>$1750</td>
+              <td>$1350</td>
+              <td>$1700</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </td>
+              <td>$1500</td>
+              <td>$1750</td>
+              <td>$1350</td>
+              <td>$1700</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </td>
+              <td>$1500</td>
+              <td>$1750</td>
+              <td>$1350</td>
+              <td>$1700</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </td>
+              <td>$1500</td>
+              <td>$1750</td>
+              <td>$1350</td>
+              <td>$1700</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i></td>
+              <td>$1500</td>
+              <td>$1750</td>
+              <td>$1350</td>
+              <td>$1700</td>
+            </tr>
+        
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <!-- TARJETAS ACEPTADAS -->
+    <div class="tab-pane fade mt-5" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class="card w-25 text-bg-dark">
+        <div class="card-body">
+          <h4 class="card-title">Tarjetas Aceptadas</h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Tarjeta Básica</li>
+          <li class="list-group-item">Tarjeta VIP</li>
+          <li class="list-group-item">Tarjeta Black</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- COMENTARIOS -->
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+      <form class="w-50">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1"  required placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </form>
+    </div>
+  </div>
+  
 </main>
 
 <!-- SECCION FOOTER -->
