@@ -95,7 +95,7 @@
                 <div class="card-body">
                   <h3 class="card-title">Hotel Marriot</h3>
                   <p class="card-text">El Hotel Marriot ofrece alojamiento de lujo en pleno centro de la ciudad. Con vistas impresionantes al mar y un spa de última generación, es el lugar perfecto para una escapada romántica.</p>
-                  <a href="#" class="btn btn-success"><i class="bi bi-plus-square-fill"> </i>Reserva ahora</a>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@gmail.com"><i class="bi bi-plus-square-fill"> </i>Reservar</button>
                 </div>
             </div>
 
@@ -104,7 +104,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Hotel Holiday Inn</h3>
                     <p class="card-text">El Hotel Holiday Inn es la opción perfecta para viajes en familia. Ofrece alojamiento cómodo y servicios para toda la familia, desde piscinas y parques infantiles hasta actividades para todas las edades.</p>
-                    <a href="#" class="btn btn-success"><i class="bi bi-plus-square-fill"> </i>Reserva Ahora</a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@gmail.com"><i class="bi bi-plus-square-fill"> </i>Reservar</button>
                 </div>
             </div>
 
@@ -113,7 +113,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Hotel Boutique</h3>
                     <p class="card-text">El Hotel Boutique es un hotel con encanto en pleno centro de la ciudad. Ofrece un ambiente relajado y acogedor, servicios de primera clase y una ubicación perfecta para explorar la ciudad.</p>
-                    <a href="#" class="btn btn-success"><i class="bi bi-plus-square-fill"> </i>Reserva Ahora</a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@gmail.com"><i class="bi bi-plus-square-fill"> </i>Reservar</button>
                 </div>
             </div>
 
@@ -122,7 +122,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Hotel Ritz Carlton</h3>
                     <p class="card-text">El Hotel Ritz Carlton es el lugar perfecto para una escapada de lujo. Ofrece un servicio excepcional, un spa de última generación y una ubicación privilegiada en el centro de la ciudad.</p>
-                    <a href="#" class="btn btn-success"><i class="bi bi-plus-square-fill"> </i>Reserva Ahora</a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@gmail.com"><i class="bi bi-plus-square-fill"> </i>Reservar</button>
                 </div>
               </div>
 
@@ -131,7 +131,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Hotel Hampton Inn</h3>
                     <p class="card-text">El Hotel Hampton Inn es una opción económica y cómoda para viajes de negocios o placer. Ofrece un desayuno buffet gratis y un servicio amigable.</p>
-                    <a href="#" class="btn btn-success"><i class="bi bi-plus-square-fill"> </i>Reserva Ahora</a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@gmail.com"><i class="bi bi-plus-square-fill"> </i>Reservar</button>
                 </div>
               </div>
 
@@ -140,8 +140,8 @@
                 <div class="card-body">
                     <h3 class="card-title">Hotel Four Seasons</h3>
                     <p class="card-text">El Hotel Four Seasons es un hotel de lujo con un servicio excepcional. Ofrece un spa de última generación, una piscina al aire libre y una ubicación privilegiada en el corazón de la ciudad.</p>
-                    <a href="#" class="btn btn-success"><i class="bi bi-plus-square-fill"> </i>Reserva Ahora</a>
-                </div>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@gmail.com"><i class="bi bi-plus-square-fill"> </i>Reservar</button>
+                  </div>
               </div>
 
 
@@ -175,7 +175,34 @@
         </div>
     </section>
 </footer>
-    
+    <!-- MODALS -->     
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">RESERVA</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <P>Dejanos tu email y un mensaje y te contactaremos a la brevedad.</P><hr>
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="recipient-name" required>
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
